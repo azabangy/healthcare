@@ -46,7 +46,7 @@ class LoginScreen extends StatelessWidget {
                         style: TextStyles.font13BlueRegular,
                       ),
                     ),
-                    verticalSpace(40),
+                    verticalSpace(20),
                     AppTextButton(
                       buttonText: "Login",
                       textStyle: TextStyles.font16WhiteSemiBold,
