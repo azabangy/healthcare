@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_complete_project/core/helpers/spacing.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../core/theming/styles.dart';
@@ -19,7 +20,7 @@ class OnboardingScreen extends StatelessWidget {
           child: Column(
             children: [
               const DocLogoAndName(),
-              SizedBox(height: 30.h),
+              verticalSpace(20),
               const DoctorImageAndText(),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 30.w),
@@ -27,10 +28,10 @@ class OnboardingScreen extends StatelessWidget {
                   children: [
                     Text(
                       'Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.',
-                      style: TextStyles.font13GrayRegular,
+                      style: TextStyles.font7GrayRegular,
                       textAlign: TextAlign.center,
                     ),
-                    SizedBox(height: 30.h),
+                    verticalSpace(20),
                     const GetStartedButton(),
                   ],
                 ),
