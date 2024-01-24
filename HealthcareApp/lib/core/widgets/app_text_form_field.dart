@@ -35,6 +35,7 @@ class AppTextFormField extends StatelessWidget {
     return TextFormField(
       controller: controller,
       decoration: InputDecoration(
+        errorStyle: TextStyles.font6RedRegular,
         isDense: true,
         contentPadding: contentPadding ??
             EdgeInsets.symmetric(horizontal: 20.w, vertical: 18.h),
@@ -68,7 +69,7 @@ class AppTextFormField extends StatelessWidget {
           ),
           borderRadius: BorderRadius.circular(16.0),
         ),
-        hintStyle: hintStyle ?? TextStyles.font14LightGrayRegular,
+        hintStyle: hintStyle ?? TextStyles.font7LightGrayRegular,
         hintText: hintText,
         suffixIcon: suffixIcon,
         fillColor: backgroundColor ?? ColorsManager.moreLightGray,
